@@ -57,18 +57,18 @@ import chat.stoat.core.model.schemas.Channel as ChannelSchema
 private const val USE_ALPHA_API = false
 
 val STOAT_BASE =
-    if (USE_ALPHA_API) "https://alpha.revolt.chat/api" else "https://api.stoat.chat/0.8"
-const val STOAT_SUPPORT = "https://support.stoat.chat"
-const val STOAT_MARKETING = "https://stoat.chat"
+    if (USE_ALPHA_API) "https://chat.hikki.team/api" else "https://chat.crabs.pro/api/0.8"
+const val STOAT_SUPPORT = "https://support.crabs.pro"
+const val STOAT_MARKETING = "https://chat.crabs.pro"
 val STOAT_FILES =
-    if (USE_ALPHA_API) "https://alpha.revolt.chat/autumn" else "https://cdn.stoatusercontent.com"
+    if (USE_ALPHA_API) "https://chat.hikki.team/autumn" else "https://chat.crabs.pro/autumn"
 val STOAT_PROXY =
-    if (USE_ALPHA_API) "https://alpha.revolt.chat/january" else "https://proxy.stoatusercontent.com"
-const val STOAT_WEB_APP = "https://stoat.chat"
-const val STOAT_INVITES = "https://stt.gg"
+    if (USE_ALPHA_API) "https://chat.hikki.team/january" else "https://chat.crabs.pro/january"
+const val STOAT_WEB_APP = "https://chat.crabs.pro"
+const val STOAT_INVITES = "https://invites.crabs.pro"
 val STOAT_WEBSOCKET =
-    if (USE_ALPHA_API) "wss://alpha.revolt.chat/ws" else "wss://events.stoat.chat"
-const val STOAT_KJBOOK = "https://stoatchat.github.io/for-android"
+    if (USE_ALPHA_API) "wss://chat.hikki.team/ws" else "wss://chat.crabs.pro/ws"
+const val STOAT_KJBOOK = "https://github.io/lifespirit/for-android"
 
 fun String.api(): String {
     return "$STOAT_BASE$this"

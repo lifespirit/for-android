@@ -53,7 +53,7 @@ fun AnyLink(text: String, action: () -> Unit, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun WeblinkPreview() {
-    Weblink(text = "https://stoat.chat", url = "https://stoat.chat")
+    Weblink(text = "https://chat.crabs.pro", url = "https://chat.crabs.pro")
 }
 
 @Preview(showBackground = true)

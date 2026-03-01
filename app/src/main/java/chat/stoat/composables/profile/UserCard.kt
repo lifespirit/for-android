@@ -361,7 +361,7 @@ fun UserCard(
                 }
 
                 Text(
-                    "stoat.chat",
+                    "chat.crabs.pro",
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier

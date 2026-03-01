@@ -18,7 +18,7 @@ data class GeoResponse(
 
 suspend fun queryGeo(): GeoResponse {
     try {
-        val response = StoatHttp.get("https://geo.revolt.chat/?client=android") {
+        val response = StoatHttp.get("https://chat.crabs.pro/geo?client=android") {
             header("User-Agent", buildUserAgent("Ktor queryGeo"))
         }
 

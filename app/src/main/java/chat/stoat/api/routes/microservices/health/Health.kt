@@ -7,6 +7,6 @@ import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsText
 
 suspend fun healthCheck(): HealthNotice {
-    val response = StoatHttp.get("https://health.revolt.chat/api/health").bodyAsText()
+    val response = StoatHttp.get("https://chat.crabs.pro/health").bodyAsText()
     return StoatJson.decodeFromString(HealthNotice.serializer(), response)
 }
