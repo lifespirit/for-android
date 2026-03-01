@@ -279,6 +279,8 @@ dependencies {
 }
 
 aboutLibraries {
+    offlineMode = true
+
     additionalLicenses += listOf("ofl")
     includePlatform = true
     strictMode = StrictMode.FAIL
