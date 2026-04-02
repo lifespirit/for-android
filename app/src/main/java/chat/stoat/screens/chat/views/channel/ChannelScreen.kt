@@ -669,7 +669,7 @@ fun ChannelScreen(
                     ) {
                         CircularProgressIndicator(modifier = Modifier.size(48.dp))
                     }
-                } else if (ageGateUnlocked == true) {
+                } else if (ageGateUnlocked) {
                     Column(
                         modifier = Modifier
                             .padding(pv)

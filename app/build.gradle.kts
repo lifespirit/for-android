@@ -64,8 +64,8 @@ android {
         applicationId = "chat.stoat.life"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = Integer.parseInt("001_003_409".replace("_", ""), 10)
-        versionName = "1.3.9a"
+        versionCode = Integer.parseInt("001_004_000".replace("_", ""), 10)
+        versionName = "1.4.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -196,7 +196,6 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.compose)
     implementation(libs.activity.compose)
 
-    implementation(libs.accompanist.systemuicontroller)
     implementation(libs.accompanist.permissions)
 
     implementation(libs.ktor.client.core)
@@ -212,7 +211,7 @@ dependencies {
 
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
 
     implementation(libs.glide)
     implementation(libs.glide.compose)
